@@ -13,6 +13,7 @@ body {
 .favorite-movies {
     background-color: white;
     width: 40%;
+    min-width: 579px;
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0 2px 2px #cccccc;
@@ -29,6 +30,10 @@ body {
     padding: 1.7rem;
 }
 
+.favorite-movies .contents {
+    padding: 2.7rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -36,6 +41,8 @@ a {
 p {
     word-spacing: 0.2rem;
     font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.9rem;
 }
 
 /*SUMMARY*/
@@ -68,8 +75,8 @@ h3 {
 }
 
 .summary p {
-    padding: 0 0.5rem 1rem 0.5rem;
-    text-align: left;
+    padding-bottom: 1rem;
+    padding-right: 0.7rem;
 }
 
 strong {
@@ -78,10 +85,11 @@ strong {
 
 .summary a {
     background-color: #dd5555;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 0.75rem;
     color: white;
     font-weight: 700;
+    font-size: 1.1rem;
     display: inline-block;
 }
 
@@ -120,15 +128,37 @@ li a {
 }
 
 /*FAVORITE MOVIES*/
+h3 {
+    text-align: center;
+}
+
 h3 span {
     background-color: #d4d4d4;
 }
 
 .movie {
     display: flex;
+    padding-top: 3rem;
+}
+
+.movie:last-child {
+    padding-bottom: 1rem;
+}
+
+.movie img {
+    width: 161px;
+    height: 238px;
 }
 
 h4 {
     font-weight: 600;
     font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.movie-info p {
+    width: 90%;
+    margin: 0 auto;
+    padding-right: 0.3rem;
 }
